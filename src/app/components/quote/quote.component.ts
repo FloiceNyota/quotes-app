@@ -1,5 +1,5 @@
-import { Quote } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import {Quote} from '../quote'
 
 @Component({
   selector: 'app-quote',
@@ -14,7 +14,34 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'Behan','What you are is Gods gift to you,what you become is your gift to God','John Piper',new Date(2020,10,10),0,0),
     new Quote(5,'Dorothy','Rejection is an opportunity for your selection','Bernard Branson',new Date(2021,12,07),0,0)
   ];
-  
+  deleteQuote(isComplete,index){
+    if (isComplete){
+        let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].name}'s quote`)
+
+        if(toDelete){
+            this.quotes.splice(index,1)
+        }
+    }
+}
+
+toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+}
+
+
+addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id=quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+
+}
+
+constructor() { }
+
+ngOnInit() {
+}
+
 
 
 }
