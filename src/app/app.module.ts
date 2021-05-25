@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuoteComponent } from './components/quote/quote.component';
+import { QuoteComponent } from './components/form/quote.component';
 import { QuoteFormComponent } from './components/quote-form/quote-form.component';
 import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
 
