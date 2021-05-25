@@ -5,8 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './components/quote/quote.component';
-import { QuoteFormComponent } from './components/quote-form/quote-form.component';
-import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
+import { QuoteDetailComponent } from './components/quote-details/quote-details.component';
 import { DateCountPipe } from './date-count.pipe';
 import { HighlightDirective } from './highlight.directive';
 
