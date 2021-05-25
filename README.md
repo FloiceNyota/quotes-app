@@ -1,8 +1,18 @@
 # QuotesApp
 An Angular built website with a list of quotes. One can add, delete,upvote or downvote a quote on the site.
 
-# Author 
+# Author
 Floice Nyota
+
+# Project Description.
+This is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
+
+### Setup
+To access this project on your local files, you can clone it using these steps
+1. Open your terminal
+2. Use this command to clone `$ git clone https://github.com/FloiceNyota98/masterpiece-pizza-parlour.git`
+3. This will clone the repositoty into your local folder
+ __Enjoy :)__
 
 # Demo
 Here is a link to a live working demo.
