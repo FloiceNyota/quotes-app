@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuoteComponent } from './components/form/quote.component';
+import { QuoteComponent } from './components/quote/quote.component';
 import { QuoteFormComponent } from './components/quote-form/quote-form.component';
 import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
+import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     QuoteFormComponent,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    DateCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
